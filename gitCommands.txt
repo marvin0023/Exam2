@@ -1,0 +1,82 @@
+Version control
+Editing, merging, and pushing branches
+
+Create a new branch and switch to that branch
+
+git branch editing
+git checkout editing
+
+Make some changes to the file and commit the changes
+
+git commit -m “message”
+
+Switch back to the master branch
+
+git checkout master
+
+Merge the editing branch to the master branch
+
+git merge editing
+
+Delete unused branch
+
+git branch -d editing
+
+Push all changes to the remote repository
+
+git push
+
+
+Version control
+Remote files
+
+You can also contribute to existing projects. For example, you can clone an existing project to download its source files.
+
+git clone https://github.com/CSUF-CPSC254-2017F0102/test.git
+
+Make sure you change to the cloned directory before you start editing files.
+
+cd test
+
+Create a new branch for editing and switch to it
+
+git branch username
+git checkout username
+
+Create a text file whose name is your first initial and lastname. In my case, that is pinventado. You can place any text in the file. Add the file to the staging area.
+
+git add <filename>
+
+Commit the changes to your local repository, then switch to the master branch and merge it with your edited version.
+
+git commit -m <message>
+
+Switch back to the master branch and merge it with the edited version. Remove unused folders.
+
+git checkout master
+git merge username
+git branch -d username
+
+Push your changes to the remote repository
+
+git push origin
+
+
+
+Version control
+Remote branches
+
+We have mostly worked on the master branch. Just like your local repository that allows the creation of branches, you can also push your local branches to the remote repository
+
+git push origin branchname
+
+Other members of the team can also pull your branch
+
+git pull origin branchname
+
+Once you're done working on the branch, you can merge changes to the master branch and delete both the local and remote branches.
+
+git checkout master
+git merge branchname
+git branch -d branchname
+git push --delete origin branchname

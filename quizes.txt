@@ -1,0 +1,63 @@
+The correct answer is: Step 1 → git init, Step 2 → git add file.cpp, Step 3 → git commit -m "initial commit", Step 4 → git push origin master
+
+The correct answer is: Copy files from the local repository to the remote repository → git push origin master, Initialize a git project → git init, Move file from the staging area into the local repository
+→ git commit -m "initial commit", Copy a file to the staging area → git add file.cpp, Switch from the current branch to the prototype branch → git checkout prototype, Update the local repository with updates from the remote repository → git pull origin master, Create a new branch called prototype in the local repository → git branch prototype
+
+Which among the following is true about open source software engineering?
+Select one:
+a. Field testing in open source software development is excellent because many people can test the code and contribute fixes. Correct
+b. Most open open source software development teams spend a lot of time and effort in analyzing marketing requirements before they develop the project.
+c. Most open source software are well-documented and provide excellent technical support.
+d. Most open source software have very good system level and detailed design.
+Feedback
+The correct answer is: Field testing in open source software development is excellent because many people can test the code and contribute fixes.
+
+The correct answers are: A unit test allows you to test whether your code (usually functions and methods) works as intended., A unit test allows you to check previously working code as you continue to modify your project., A unit test often requires the creation of test cases that compares actual values returned by a function/method and their expected values.
+
+The correct answer is: Customers could not see how open source software can be profitable?
+
+
+The correct answers are: Convenience, Quality, Definition of a good operating system
+
+
+
+What was the name used to refer to Netscape’s browser source code? Eventually, this was also used to name their open-source browser. 
+Answer: Correct
+Feedback
+The correct answer is: Mozilla
+Question 2
+Incorrect
+Points out of 1.00
+Flag question
+Question text
+
+What was the name of the license developed for Netscape’s open source browser?
+Answer: Incorrect
+Feedback
+The correct answer is: Mozilla Public License
+Question 3
+Incorrect
+Points out of 1.00
+Flag question
+Question text
+
+What was the title of Eric Raymond’s book that talked about his observations of the Linux development process and open source project development?
+Select one:
+a. The New Hacker’s Dictionary Incorrect
+b. The Cat in the Hat
+c. Open Sources: Voices from the Open Source Revolution
+d. The Cathedral and the Bazaar
+Feedback
+The correct answer is: The Cathedral and the Bazaar
+Question 4
+Correct
+Points out of 1.00
+Flag question
+Question text
+
+What did the “Forget bottom-up; work on top-down” strategy mean?
+Select one:
+a. Convince the bosses who will impose the vision to the engineers Correct
+b. Convince engineers who will persuade their bosses to go open source
+Feedback
+The correct answer is: Convince the bosses who will impose the vision to the engineers

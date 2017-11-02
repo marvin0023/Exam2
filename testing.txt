@@ -1,0 +1,51 @@
+
+Unit Testing
+Components of the googletest unit test
+
+TEST(test_case_name, test_name) {
+
+ ... test body ...
+
+}
+
+    Test case: name of the test case
+    Test: name of test belonging to a test case
+    Test body: contains test assertions, but can also any valid C statement
+
+Types of Test Assertions:
+
+    ASSERT_* - Fatal assertions will stop the entire test when it fails. This is usually used when the rest of the unit test depends on prior code.
+    EXPECT_* - The unit test will continue to run when non-fatal assertions fail. This allows developers to see all errors that don't necessarily depend on other code.
+
+
+Unit Testing
+Googletest assertions
+
+Basic assertions
+
+Fatal assertion	Nonfatal assertion	Verifies
+ASSERT_TRUE(condition);	EXPECT_TRUE(condition);	condition is true
+ASSERT_FALSE(condition);	EXPECT_FALSE(condition);	condition is false
+
+Binary comparisons
+
+Fatal assertion	Nonfatal assertion	Verifies
+ASSERT_EQ(val1,val2);	EXPECT_EQ(val1,val2);	val1 == val2
+ASSERT_NE(val1,val2);	EXPECT_NE(val1,val2);	val1 != val2
+ASSERT_LT(val1,val2);	EXPECT_LT(val1,val2);	val1 < val2
+ASSERT_LE(val1,val2);	EXPECT_LE(val1,val2);	val1 <= val2
+ASSERT_GT(val1,val2);	EXPECT_GT(val1,val2);	val1 > val2
+ASSERT_GE(val1,val2);	EXPECT_GE(val1,val2);	val1 >= val2
+
+String comparisons
+
+Fatal assertion	Nonfatal assertion	Verifies
+ASSERT_STREQ(str1,str2);	EXPECT_STREQ(str1,str2);	the two C strings have the same content
+ASSERT_STRNE(str1,str2);	EXPECT_STRNE(str1,str2);	the two C strings have different content
+ASSERT_STRCASEEQ(str1,str2);	EXPECT_STRCASEEQ(str1,str2);	the two C strings have the same content, ignoring case
+ASSERT_STRCASENE(str1,str2);	EXPECT_STRCASENE(str1,str2);	the two C strings have different content, ignoring case
+
+# Makefile
+test:
+        g++ -isystem include -pthread gtest-all.o unittest.cpp sum.cpp -o unittest
+        ./unittest
